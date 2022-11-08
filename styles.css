@@ -230,7 +230,7 @@ h2 {
 
 .Educacion {
     width: 100%;
-    height: 200px;
+    height: auto;
     margin-top: 50px;
     color: #fff;
     display: flex;
@@ -268,7 +268,7 @@ h2 {
     position: absolute;
 }
 
-.text-back{
+.text-back {
     position: absolute;
 }
 
@@ -280,6 +280,7 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     backface-visibility: hidden;
     transition: 1s;
     border-radius: 6px;
@@ -289,16 +290,13 @@ h2 {
 
 /* rotacion de cards*/
 .card .front {
-   /*background-color: yellow;*/ 
+    /*background-color: yellow;*/
     transform: rotateY(0deg);
-
 }
 
 .card .back {
-   
+
     /* background-color: blue;*/
-    display: flex;
-    text-align: center;
     transform: rotateY(180deg);
 }
 
@@ -307,5 +305,57 @@ h2 {
 }
 
 .card:hover .back {
+
     transform: rotateY(360deg);
+}
+
+.cursos {
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*seccion de proyectos*/
+.Proyectos {
+    width: 100%;
+    height: auto;
+}
+.galeria{
+    width: 100%;
+    height: auto;
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-foto{
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items:flex-end;
+}
+
+.card-foto h3{
+    position: absolute;
+    color: black;
+}
+
+.card-foto img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+
+}
+
+/*Footer*/
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: aqua;
 }
