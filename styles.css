@@ -9,6 +9,10 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.titulo {
+    color: aqua;
+}
+
 /*menu*/
 
 .menu {
@@ -38,7 +42,7 @@ body {
 
 .sobre-mi {
     text-align: center;
-    color: blanchedalmond;
+    color: #fff;
 }
 
 .line {
@@ -57,14 +61,15 @@ body {
 }
 
 
-.tecnologias{
+.tecnologias {
     width: 50%;
     height: 100%;
-  
+
     text-align: center;
 
 }
-.img-tecnologias{
+
+.img-tecnologias {
     width: 100%;
     height: 100%;
     display: flex;
@@ -94,7 +99,8 @@ h2 {
     margin-bottom: 2px;
 
 }
-.descripcion{
+
+.descripcion {
     color: #fff;
 }
 
@@ -225,5 +231,81 @@ h2 {
 .Educacion {
     width: 100%;
     height: 200px;
-    background-color: black;
+    margin-top: 50px;
+    color: #fff;
+    display: flex;
+
+}
+
+.vl {
+    /* linea vertical*/
+    border-left: 6px solid #fff;
+    height: 300px;
+}
+
+.profesional {
+    width: 50%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    position: relative;
+    width: 280px;
+    height: 330px;
+    margin-right: 15px;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+
+}
+
+.text-front {
+    position: absolute;
+}
+
+.text-back{
+    position: absolute;
+}
+
+.card div {
+    /* selecciono los div que esten dentro de la clase card*/
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    transition: 1s;
+    border-radius: 6px;
+
+}
+
+
+/* rotacion de cards*/
+.card .front {
+   /*background-color: yellow;*/ 
+    transform: rotateY(0deg);
+
+}
+
+.card .back {
+   
+    /* background-color: blue;*/
+    display: flex;
+    text-align: center;
+    transform: rotateY(180deg);
+}
+
+.card:hover .front {
+    transform: rotateY(180deg);
+}
+
+.card:hover .back {
+    transform: rotateY(360deg);
 }
